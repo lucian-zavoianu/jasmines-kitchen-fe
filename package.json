@@ -1,0 +1,61 @@
+{
+  "name": "jasmines-kitchen",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^17.3.0",
+    "@angular/cdk": "^17.3.6",
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@angular/forms": "^17.3.0",
+    "@angular/material": "^17.3.6",
+    "@angular/platform-browser": "^17.3.0",
+    "@angular/platform-browser-dynamic": "^17.3.0",
+    "@angular/router": "^17.3.0",
+    "@ngrx/effects": "^17.2.0",
+    "@ngrx/store": "^17.2.0",
+    "cypress": "^13.8.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "material-icons": "^1.13.12",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.3.5",
+    "@angular/cli": "^17.3.5",
+    "@angular/compiler-cli": "^17.3.0",
+    "@ngrx/schematics": "^17.2.0",
+    "@ngrx/store-devtools": "^17.2.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "angular-in-memory-web-api": "^0.17.0",
+    "jest": "^29.7.0",
+    "jest-preset-angular": "^14.0.3",
+    "prettier": "^3.2.5",
+    "typescript": "~5.4.2"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupFilesAfterEnv": [
+      "<rootdir>/setup-jest.ts"
+    ],
+    "moduleNameMapper": {
+      "@storeActions": "<rootdir>/src/app/store/actions",
+      "@storeReducers": "<rootdir>/src/app/store/reducers",
+      "@storeEffects": "<rootdir>/src/app/store/effects",
+      "@app/(.*)": "<rootdir>/src/app/$1"
+    },
+    "coveragePathIgnorePatterns": [
+      "index.ts"
+    ]
+  }
+}
